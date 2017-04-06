@@ -1,6 +1,8 @@
 # Grafana Windows Dashboard
 A Grafana 4 dashboard for Windows hosts, requires InfluxDB and Telegraf stats saved into it.
 
+![Windows Host Overview Dashboard](https://raw.githubusercontent.com/ManDevOps/GrafanaWindowsHostDashboard/master/WindowsHostOverview.png "Windows Host Overview Dashboard")
+
 Your telegraf config `inputs` section needs to look like this:
 
 ````
