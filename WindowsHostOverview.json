@@ -3,7 +3,7 @@
     {
       "name": "DS_TELEGRAF",
       "label": "Telegraf",
-      "description": "Data source with Influxdb stats",
+      "description": "",
       "type": "datasource",
       "pluginId": "influxdb",
       "pluginName": "InfluxDB"
@@ -1195,6 +1195,7 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "$hostname: $col",
               "dsType": "influxdb",
               "groupBy": [
                 {
@@ -1775,13 +1776,14 @@
           "fill": 1,
           "id": 14,
           "legend": {
-            "avg": false,
-            "current": false,
-            "max": false,
-            "min": false,
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 1,
@@ -2121,13 +2123,14 @@
           "fill": 5,
           "id": 25,
           "legend": {
-            "avg": false,
-            "current": false,
-            "max": false,
-            "min": false,
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 1,
@@ -2143,6 +2146,7 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "$hostname: $col",
               "dsType": "influxdb",
               "groupBy": [
                 {
@@ -2222,13 +2226,14 @@
           "fill": 5,
           "id": 26,
           "legend": {
-            "avg": false,
-            "current": false,
-            "max": false,
-            "min": false,
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 1,
@@ -2244,6 +2249,7 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "$hostname: $col",
               "dsType": "influxdb",
               "groupBy": [
                 {
@@ -2990,5 +2996,5 @@
   },
   "timezone": "browser",
   "title": "Windows Host Overview",
-  "version": 37
+  "version": 38
 }
